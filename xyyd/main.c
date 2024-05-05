@@ -40,6 +40,10 @@ int main(int argc, char *argv[])
                     running = 0;
                 }
             }
+            else if (event.type == SDL_EVENT_QUIT)
+            {
+                running = 0;
+            }
             else if (event.type == SDL_EVENT_MOUSE_MOTION)
             {
                 width = event.motion.x;
